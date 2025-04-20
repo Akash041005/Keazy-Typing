@@ -103,3 +103,46 @@ section-1{
        
     }
 }
+
+section-3{
+    width: 100%;
+    height: 51.7vw;
+    background-color: #030714;
+    display: flex; 
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: space-between;
+    // background-color: white;
+    padding: 15% 20%;
+    
+
+
+
+    .modes{
+        width: 20%; 
+        height: 30vh;
+        
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.modes:hover{
+
+    scale: 1.1;
+   
+    background-color: #000;
+    padding: 20px;
+    border-radius: 16px;
+    display: inline-block;
+    box-shadow:
+    0 0 20px rgba(0, 255, 255, 0.4),
+    0 0 40px rgba(0, 255, 255, 0.3),
+    0 0 80px rgba(0, 255, 255, 0.2);
+}
+.modes:active{
+    scale: 0.95;
+}

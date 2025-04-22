@@ -1,13 +1,40 @@
+@font-face {
+  font-family: "antarctican";
+  src: url("./fonts/AntarcticanMono-Book.ttf") format("truetype");
+  src: url("./fonts/AntarcticanMono-SemiBold.ttf") format("truetype");
+}
 * {
   padding: 0%;
   margin: 0;
   box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 html, body {
   width: 100%;
+  height: 100%;
   background-color: black;
   color: white;
+}
+
+.space-grotesk {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.share {
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.audiowide {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 section-1 {
@@ -62,6 +89,10 @@ section-1 .ask-name #name {
   margin-left: 3vw;
   background-color: #030714;
 }
+section-1 .ask-name #name:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
 section-1 #butt-1 {
   height: 3.5vw;
   width: 8vw;
@@ -71,6 +102,14 @@ section-1 #butt-1 {
   border-radius: 100px;
   font-size: larger;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+section-1 #butt-1:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+section-1 #butt-1:active {
+  transform: scale(0.9);
+  transition: all 0.3s ease;
 }
 
 section-3 {
@@ -96,13 +135,218 @@ section-3 .modes img {
 
 .modes:hover {
   scale: 1.1;
-  background-color: #000;
+  background-color: #0a0a0a;
   padding: 20px;
   border-radius: 16px;
   display: inline-block;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4), 0 0 40px rgba(0, 255, 255, 0.3), 0 0 80px rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 12px rgba(0, 183, 255, 0.6), 0 0 24px rgba(0, 183, 255, 0.5), 0 0 48px rgba(0, 183, 255, 0.4), inset 0 0 10px rgba(0, 183, 255, 0.3);
+  transition: all 0.3s ease;
 }
 
 .modes:active {
   scale: 0.95;
+}
+
+.section-2 {
+  width: 100%;
+  height: 51.7vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("./images/moon background.png");
+  background-size: cover;
+  padding-top: 8%;
+}
+.section-2 .hi-box {
+  justify-self: center;
+  align-self: center;
+  height: 90%;
+  width: 50%;
+  border: 3px solid rgb(32, 148, 194);
+  border-radius: 2%;
+  padding: 5% 5%;
+  box-shadow: 0 0 20px rgba(0, 183, 255, 0.5), 0 0 40px rgba(0, 183, 255, 0.3), inset 0 0 10px rgba(0, 183, 255, 0.2);
+}
+.section-2 .hi-box #hi {
+  font-size: 6vw;
+  font-family: audiowide;
+}
+
+#u-name {
+  font-size: 6vw;
+  color: transparent;
+  -webkit-text-stroke: 0.2px white;
+  font-family: audiowide;
+}
+
+#quote {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#redy-butt {
+  height: 8vh;
+  width: 10vw;
+  border-radius: 100px;
+  margin-top: 10vh;
+  margin-left: 40%;
+  font-size: large;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+#redy-butt:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+#redy-butt:active {
+  transform: scale(0.95);
+}
+
+.section-4 {
+  width: 100%;
+  height: 51.7vw;
+}
+.section-4 .tip-img {
+  height: 100%;
+  width: 100%;
+  background-image: url(./images/keyboard\ tips.png);
+  background-size: cover;
+  background-position: 15%;
+  position: relative;
+}
+.section-4 .tip-img #go {
+  position: absolute;
+  height: 8vh;
+  width: 10vw;
+  border-radius: 100px;
+  left: 45%;
+  top: 45%;
+  font-size: large;
+  background-color: rgb(192, 41, 222);
+  color: white;
+}
+
+#go:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+#go:active {
+  transform: scale(0.95);
+}
+
+.main-part {
+  background-color: #343541;
+  height: 51.7vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-part .main-part2 {
+  height: 90%;
+  width: 95%;
+  position: relative;
+  border: 3px solid rgb(32, 148, 194);
+  box-shadow: 5px 5px 10px rgb(32, 148, 194);
+  border-radius: 30px;
+}
+.main-part .main-part2 .matter {
+  height: -moz-max-content;
+  height: max-content;
+  word-spacing: 1px;
+  font-size: 1.3vw;
+  width: 60%;
+  font-family: antarctican;
+  margin-left: 2%;
+  margin-top: 1%;
+  border-radius: 10px;
+  border: 2px solid goldenrod;
+  padding: 2vw;
+}
+.main-part .main-part2 .write {
+  height: 40%;
+  word-spacing: 1px;
+  font-size: 1.3vw;
+  width: 80%;
+  font-family: antarctican;
+  margin-top: 100px;
+  margin-left: 3%;
+  margin-top: 1%;
+  border-radius: 10px;
+  padding-top: 2.5vw;
+}
+.main-part .timer {
+  position: absolute;
+  top: 10%;
+  left: 80%;
+  font-family: audiowide;
+}
+
+/* FUTURISTIC THEME UPGRADES */
+.main-part .main-part2 .matter {
+  border: 2px solid #ff00ff;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 0 10px #ff00ff;
+}
+
+.main-part .main-part2 .write input {
+  border: 2px solid #00ffff;
+  background: transparent;
+  color: #0ff;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+.main-part .main-part2 .write input::-moz-placeholder {
+  color: #0ff;
+  opacity: 0.6;
+}
+
+.main-part .main-part2 .write input::placeholder {
+  color: #0ff;
+  opacity: 0.6;
+}
+
+.main-part .main-part2 .timer {
+  color: #ff00ff;
+  text-shadow: 0 0 10px #ff00ff;
+  font-size: 2.5vw;
+}
+
+.main-part .main-part2 .write textarea {
+  width: 100%;
+  height: 180px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #00ffff;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 18px;
+  padding: 20px;
+  border: 2px solid #00ffff;
+  border-radius: 12px;
+  box-shadow: 0 0 8px #00ffff, 0 0 15px rgba(0, 255, 255, 0.4392156863), inset 0 0 10px rgba(0, 255, 255, 0.2509803922);
+  caret-color: #00ffff;
+  resize: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-part .main-part2 .write textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px #00ffff, 0 0 25px #00ffff, inset 0 0 20px rgba(0, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.main-part .main-part2 .write textarea::-moz-placeholder {
+  color: rgba(0, 255, 255, 0.5333333333);
+  letter-spacing: 1px;
+  backdrop-filter: blur;
+}
+
+.main-part .main-part2 .write textarea::placeholder {
+  color: rgba(0, 255, 255, 0.5333333333);
+  letter-spacing: 1px;
+  -webkit-backdrop-filter: blur;
+          backdrop-filter: blur;
 }/*# sourceMappingURL=style.css.map */

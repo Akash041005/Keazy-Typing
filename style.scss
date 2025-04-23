@@ -16,7 +16,7 @@ src: url('./fonts/AntarcticanMono-SemiBold.ttf') format('truetype');
     box-sizing: border-box;
     user-select: none;
 
-}
+    }     
 html,body{
     width: 100%;
     height: 100%;
@@ -45,7 +45,8 @@ html,body{
     font-style: normal;
   }
 
-section-1{
+.section-1{
+ 
 
     height: 51.7vw;
     width: 100%;
@@ -148,56 +149,58 @@ section-1{
         transform: scale(0.9);
         transition: all 0.3s ease;
     }
-}
-
-section-3{
-    width: 100%;
-    height: 51.7vw;
-    background-color: #030714;
-    display: flex; 
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-content: space-between;
-    // background-color: white;
-    padding: 15% 20%;
     
-
-
-
-    .modes{
-        width: 20%; 
-        height: 30vh;
-        
-        img{
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
     }
-}
 
-.modes:hover {
-    scale: 1.1;
-    background-color: #0a0a0a;
-    padding: 20px;
-    border-radius: 16px;
-    display: inline-block;
-    box-shadow:
-      0 0 12px rgba(0, 183, 255, 0.6),
-      0 0 24px rgba(0, 183, 255, 0.5),
-      0 0 48px rgba(0, 183, 255, 0.4),
-      inset 0 0 10px rgba(0, 183, 255, 0.3);
-    transition: all 0.3s ease;
-  }
-  
-.modes:active{
+        .section-3{
+              width: 100%;
+            height: 51.7vw;
+            background-color: #030714;
+            display: flex; 
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-content: space-between;
+            // background-color: white;
+            padding: 15% 20%;
+            
+
+
+
+                      .modes{
+                                      width: 20%; 
+                                      height: 30vh;
+                                      
+                                      img{
+                                          height: 100%;
+                                          width: 100%;
+                                                              object-fit: cover;
+                                                           }
+                                                                 }
+                                                       }
+
+                                                      .modes:hover {
+                                                        scale: 1.1;
+                                                        background-color: #0a0a0a;
+                                                        padding: 20px;
+                                                        border-radius: 16px;
+                                                        display: inline-block;
+                                                        box-shadow:
+                                                          0 0 12px rgba(0, 183, 255, 0.6),
+                                                          0 0 24px rgba(0, 183, 255, 0.5),
+                                                          0 0 48px rgba(0, 183, 255, 0.4),
+                                                          inset 0 0 10px rgba(0, 183, 255, 0.3);
+                                                        transition: all 0.3s ease;
+                                                      }
+                                                      
+  .modes:active{
     scale: 0.95;
-}
+
+  } 
 
 
 
-
-.section-2{
+// -------------------------------------------------------------------------------------------------
+  .section-2{
 
     width: 100%;
     height: 51.7vw;
@@ -228,7 +231,8 @@ section-3{
         }
         
     }
-}
+    
+  }
 
 #u-name{
     font-size: 6vw;
@@ -360,10 +364,19 @@ section-3{
     }
 
     .timer{
+      height: 10vw;
+      width: 15;
       position: absolute;
       top: 10%;
       left: 80%;
       font-family:audiowide;
+      h1{
+        height: 30%;
+        width: 100%;
+
+      }
+
+
     }
 
   }

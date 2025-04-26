@@ -235,7 +235,7 @@ html, body {
 }
 
 .main-part {
-  background-color: #343541;
+  background-color: #030714;
   height: 51.7vw;
   width: 100%;
   display: flex;
@@ -246,9 +246,6 @@ html, body {
   height: 90%;
   width: 95%;
   position: relative;
-  border: 3px solid rgb(32, 148, 194);
-  box-shadow: 5px 5px 10px rgb(32, 148, 194);
-  border-radius: 30px;
 }
 .main-part .main-part2 .matter {
   height: -moz-max-content;
@@ -264,10 +261,8 @@ html, body {
   padding: 2vw;
 }
 .main-part .main-part2 .write {
-  height: 40%;
   word-spacing: 1px;
   font-size: 1.3vw;
-  width: 80%;
   font-family: antarctican;
   margin-top: 100px;
   margin-left: 3%;
@@ -324,11 +319,11 @@ html, body {
 
 .main-part .main-part2 .write textarea {
   width: 100%;
-  height: 180px;
+  height: 280px;
   background: rgba(0, 0, 0, 0.4);
   color: #00ffff;
   font-family: "Share Tech Mono", monospace;
-  font-size: 18px;
+  font-size: 25px;
   padding: 20px;
   border: 2px solid #00ffff;
   border-radius: 12px;
@@ -355,4 +350,4 @@ html, body {
   letter-spacing: 1px;
   -webkit-backdrop-filter: blur;
           backdrop-filter: blur;
-}/*# sourceMappingURL=style.css.map */
+}
